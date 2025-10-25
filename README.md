@@ -17,7 +17,7 @@ Supports Laravel 10/11/12 and PHP 8.1+ (uses `php-amqplib/php-amqplib` v3).
 ## Installation
 
 ```bash
-composer require afonsoogomes/laravel-rabbitmq
+composer require batatahub-tech/laravel-rabbitmq
 ```
 
 The service provider is auto-discovered. No manual registration needed.

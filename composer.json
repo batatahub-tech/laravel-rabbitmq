@@ -1,5 +1,5 @@
 {
-    "name": "afonsoogomes/laravel-rabbitmq",
+    "name": "batatahub-tech/laravel-rabbitmq",
     "description": "Full RabbitMQ package for Laravel: manage exchanges, queues, bindings, publish and consume messages",
     "license": "MIT",
     "type": "library",
