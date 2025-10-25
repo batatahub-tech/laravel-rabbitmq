@@ -1,0 +1,15 @@
+<?php
+
+namespace {{ namespace }};
+
+use PhpAmqpLib\Message\AMQPMessage;
+
+class {{ class }}
+{
+    public function handle(AMQPMessage $message): void
+    {
+        //
+    }
+}
+
+
