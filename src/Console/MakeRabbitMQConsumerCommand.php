@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\RabbitMQ\Console;
+namespace BatataHub\RabbitMQ\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\App;
@@ -15,7 +15,7 @@ class MakeRabbitMQConsumerCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'make:rabbitmq-consumer {name?}';
+    protected $signature = 'rabbitmq:make-consumer {name?}';
 
     /**
      * The console command description.

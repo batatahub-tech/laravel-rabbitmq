@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\RabbitMQ\Services;
+namespace BatataHub\RabbitMQ\Services;
 
 use PhpAmqpLib\Channel\AMQPChannel;
 use PhpAmqpLib\Connection\AMQPStreamConnection;

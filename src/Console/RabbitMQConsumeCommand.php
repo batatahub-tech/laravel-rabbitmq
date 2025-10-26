@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\RabbitMQ\Console;
+namespace BatataHub\RabbitMQ\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Config;
 use PhpAmqpLib\Message\AMQPMessage;
-use Vendor\RabbitMQ\Services\RabbitMQService;
+use BatataHub\RabbitMQ\Services\RabbitMQService;
 
 class RabbitMQConsumeCommand extends Command
 {

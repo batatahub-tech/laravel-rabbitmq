@@ -26,10 +26,10 @@ The service provider is auto-discovered. No manual registration needed.
 
 ```bash
 # Publish config/rabbitmq.php
-php artisan vendor:publish --tag=config --provider="Vendor\\RabbitMQ\\Providers\\RabbitMQServiceProvider"
+php artisan vendor:publish --tag=config --provider="BatataHub\\RabbitMQ\\Providers\\RabbitMQServiceProvider"
 
 # Publish the consumer stub to stubs/rabbitmq-consumer.plain.stub
-php artisan vendor:publish --tag=stubs --provider="Vendor\\RabbitMQ\\Providers\\RabbitMQServiceProvider"
+php artisan vendor:publish --tag=stubs --provider="BatataHub\\RabbitMQ\\Providers\\RabbitMQServiceProvider"
 ```
 
 ---
@@ -168,7 +168,7 @@ Use the `RabbitMQService` via constructor injection anywhere in your app. Messag
 ```php
 <?php
 
-use Vendor\RabbitMQ\Services\RabbitMQService;
+use BatataHub\RabbitMQ\Services\RabbitMQService;
 
 class UserController
 {
@@ -200,7 +200,7 @@ You can also consume without the Artisan command:
 ```php
 <?php
 
-use Vendor\RabbitMQ\Services\RabbitMQService;
+use BatataHub\RabbitMQ\Services\RabbitMQService;
 use PhpAmqpLib\Message\AMQPMessage;
 
 class Worker

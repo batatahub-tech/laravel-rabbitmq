@@ -1,13 +1,13 @@
 <?php
 
-namespace Vendor\RabbitMQ\Providers;
+namespace BatataHub\RabbitMQ\Providers;
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
-use Vendor\RabbitMQ\Services\RabbitMQService;
-use Vendor\RabbitMQ\Console\RabbitMQConsumeCommand;
-use Vendor\RabbitMQ\Console\MakeRabbitMQConsumerCommand;
+use BatataHub\RabbitMQ\Services\RabbitMQService;
+use BatataHub\RabbitMQ\Console\RabbitMQConsumeCommand;
+use BatataHub\RabbitMQ\Console\MakeRabbitMQConsumerCommand;
 
 class RabbitMQServiceProvider extends ServiceProvider
 {

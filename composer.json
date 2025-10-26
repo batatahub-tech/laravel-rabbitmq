@@ -11,13 +11,13 @@
     },
     "autoload": {
       "psr-4": {
-        "Vendor\\RabbitMQ\\": "src/"
+        "BatataHub\\RabbitMQ\\": "src/"
       }
     },
     "extra": {
       "laravel": {
         "providers": [
-          "Vendor\\RabbitMQ\\Providers\\RabbitMQServiceProvider"
+          "BatataHub\\RabbitMQ\\Providers\\RabbitMQServiceProvider"
         ]
       }
     },
