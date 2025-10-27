@@ -2,10 +2,11 @@
 
 namespace BatataHub\RabbitMQ\Console;
 
-use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Config;
-use PhpAmqpLib\Message\AMQPMessage;
 use BatataHub\RabbitMQ\Services\RabbitMQService;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Console\Command;
+use PhpAmqpLib\Message\AMQPMessage;
 
 class RabbitMQConsumeCommand extends Command
 {
@@ -55,7 +56,7 @@ class RabbitMQConsumeCommand extends Command
         $service = new RabbitMQService($connConfig);
 
         foreach ($consumers as $consumer) {
-            $handler = new $consumer['handler'];
+            $handler = App::makeWith($consumer['handler']);
             $this->info("Consuming messages from queue '{$consumer['queue']}'");
             $service->consume($consumer['queue'], function (AMQPMessage $message) use ($handler) {
                 while (true) {
