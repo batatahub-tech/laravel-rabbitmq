@@ -98,9 +98,9 @@ RABBITMQ_VHOST=/
 Generate a consumer class (you can pass nested paths using `/`):
 
 ```bash
-php artisan make:rabbitmq-consumer UserCreatedConsumer
+php artisan rabbitmq:make-consumer UserCreatedConsumer
 # or
-php artisan make:rabbitmq-consumer Sub/Path/EmailConsumer
+php artisan rabbitmq:make-consumer Sub/Path/EmailConsumer
 ```
 
 Generated file will live under `app/RabbitMQ/Consumers/...` with namespace `App\RabbitMQ\Consumers`.
